@@ -11,14 +11,10 @@
 		8AC0D00BDD3D3609D3F5E795 /* Pods_tmdbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B71972286620A65D2B66D /* Pods_tmdbTests.framework */; };
 		C93DC873A4D5E344D7F3AAD2 /* Pods_tmdb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE35A799B79241EF1D41112 /* Pods_tmdb.framework */; };
 		E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA2E127B6F39F006187C1 /* AppDelegate.swift */; };
-		E12FA2E427B6F39F006187C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA2E327B6F39F006187C1 /* SceneDelegate.swift */; };
-		E12FA2E627B6F39F006187C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA2E527B6F39F006187C1 /* ViewController.swift */; };
-		E12FA2E927B6F39F006187C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12FA2E727B6F39F006187C1 /* Main.storyboard */; };
 		E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12FA2EA27B6F3A0006187C1 /* Assets.xcassets */; };
 		E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12FA2EC27B6F3A0006187C1 /* LaunchScreen.storyboard */; };
-		E12FA2F927B6F3A0006187C1 /* tmdbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA2F827B6F3A0006187C1 /* tmdbTests.swift */; };
-		E12FA30327B6F3A0006187C1 /* tmdbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA30227B6F3A0006187C1 /* tmdbUITests.swift */; };
-		E12FA30527B6F3A0006187C1 /* tmdbUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA30427B6F3A0006187C1 /* tmdbUITestsLaunchTests.swift */; };
+		E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA31527B6FD64006187C1 /* AppDelegateServicesConfig.swift */; };
+		E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA31727B6FDC2006187C1 /* BuilderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,17 +45,14 @@
 		DB2EB46BADC54C40AA46F45E /* Pods_tmdb_tmdbUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_tmdbUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12FA2DE27B6F39F006187C1 /* tmdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12FA2E127B6F39F006187C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E12FA2E327B6F39F006187C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E12FA2E527B6F39F006187C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E12FA2E827B6F39F006187C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E12FA2EA27B6F3A0006187C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12FA2ED27B6F3A0006187C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12FA2EF27B6F3A0006187C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12FA2F427B6F3A0006187C1 /* tmdbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12FA2F827B6F3A0006187C1 /* tmdbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbTests.swift; sourceTree = "<group>"; };
 		E12FA2FE27B6F3A0006187C1 /* tmdbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12FA30227B6F3A0006187C1 /* tmdbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbUITests.swift; sourceTree = "<group>"; };
-		E12FA30427B6F3A0006187C1 /* tmdbUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E12FA31527B6FD64006187C1 /* AppDelegateServicesConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateServicesConfig.swift; sourceTree = "<group>"; };
+		E12FA31727B6FDC2006187C1 /* BuilderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderService.swift; sourceTree = "<group>"; };
+		E12FA31F27B7011B006187C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,9 +97,9 @@
 		E12FA2D527B6F39F006187C1 = {
 			isa = PBXGroup;
 			children = (
+				E12FA31F27B7011B006187C1 /* README.md */,
 				E12FA2E027B6F39F006187C1 /* tmdb */,
 				E12FA2F727B6F3A0006187C1 /* tmdbTests */,
-				E12FA30127B6F3A0006187C1 /* tmdbUITests */,
 				E12FA2DF27B6F39F006187C1 /* Products */,
 				F161EC5D9F13553CAB614311 /* Pods */,
 				3A0FD29B1C76D73250FD7E1F /* Frameworks */,
@@ -126,13 +119,9 @@
 		E12FA2E027B6F39F006187C1 /* tmdb */ = {
 			isa = PBXGroup;
 			children = (
-				E12FA2E127B6F39F006187C1 /* AppDelegate.swift */,
-				E12FA2E327B6F39F006187C1 /* SceneDelegate.swift */,
-				E12FA2E527B6F39F006187C1 /* ViewController.swift */,
-				E12FA2E727B6F39F006187C1 /* Main.storyboard */,
-				E12FA2EA27B6F3A0006187C1 /* Assets.xcassets */,
-				E12FA2EC27B6F3A0006187C1 /* LaunchScreen.storyboard */,
-				E12FA2EF27B6F3A0006187C1 /* Info.plist */,
+				E12FA31127B6FA26006187C1 /* Source */,
+				E12FA31227B6FA2E006187C1 /* Resources */,
+				E12FA31327B6FA3B006187C1 /* SupportingFiles */,
 			);
 			path = tmdb;
 			sourceTree = "<group>";
@@ -140,18 +129,115 @@
 		E12FA2F727B6F3A0006187C1 /* tmdbTests */ = {
 			isa = PBXGroup;
 			children = (
-				E12FA2F827B6F3A0006187C1 /* tmdbTests.swift */,
+				E12FA32127B702FE006187C1 /* Source */,
+				E12FA32227B7030C006187C1 /* SupportingFiles */,
 			);
 			path = tmdbTests;
 			sourceTree = "<group>";
 		};
-		E12FA30127B6F3A0006187C1 /* tmdbUITests */ = {
+		E12FA31127B6FA26006187C1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E12FA30227B6F3A0006187C1 /* tmdbUITests.swift */,
-				E12FA30427B6F3A0006187C1 /* tmdbUITestsLaunchTests.swift */,
+				E12FA31A27B6FEF4006187C1 /* Models */,
+				E12FA31927B6FEEA006187C1 /* Scenes */,
+				E12FA31B27B6FEFD006187C1 /* Networking */,
+				E12FA32027B70265006187C1 /* UI */,
+				E12FA31D27B6FFF9006187C1 /* Util */,
 			);
-			path = tmdbUITests;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E12FA31227B6FA2E006187C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA2EA27B6F3A0006187C1 /* Assets.xcassets */,
+				E12FA2EC27B6F3A0006187C1 /* LaunchScreen.storyboard */,
+				E12FA31C27B6FFAD006187C1 /* Localizable */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E12FA31327B6FA3B006187C1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA2E127B6F39F006187C1 /* AppDelegate.swift */,
+				E12FA31427B6FD46006187C1 /* AppDelegateServices */,
+				E12FA2EF27B6F3A0006187C1 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E12FA31427B6FD46006187C1 /* AppDelegateServices */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA31527B6FD64006187C1 /* AppDelegateServicesConfig.swift */,
+				E12FA31727B6FDC2006187C1 /* BuilderService.swift */,
+			);
+			path = AppDelegateServices;
+			sourceTree = "<group>";
+		};
+		E12FA31927B6FEEA006187C1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E12FA31A27B6FEF4006187C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E12FA31B27B6FEFD006187C1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E12FA31C27B6FFAD006187C1 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		E12FA31D27B6FFF9006187C1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA31E27B7000B006187C1 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E12FA31E27B7000B006187C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E12FA32027B70265006187C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E12FA32127B702FE006187C1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E12FA32227B7030C006187C1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
@@ -164,7 +250,6 @@
 				C8F9E6B2DEA2E80001D276D3 /* Pods-tmdbTests.debug.xcconfig */,
 				5562BBF05F572F741BE3582C /* Pods-tmdbTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,7 +362,6 @@
 			files = (
 				E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */,
 				E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */,
-				E12FA2E927B6F39F006187C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12FA2E627B6F39F006187C1 /* ViewController.swift in Sources */,
+				E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */,
+				E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */,
 				E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */,
-				E12FA2E427B6F39F006187C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12FA2F927B6F3A0006187C1 /* tmdbTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,8 +472,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12FA30327B6F3A0006187C1 /* tmdbUITests.swift in Sources */,
-				E12FA30527B6F3A0006187C1 /* tmdbUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,14 +491,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E12FA2E727B6F39F006187C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E12FA2E827B6F39F006187C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E12FA2EC27B6F3A0006187C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -535,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -558,19 +631,19 @@
 				INFOPLIST_FILE = tmdb/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -587,19 +660,19 @@
 				INFOPLIST_FILE = tmdb/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
