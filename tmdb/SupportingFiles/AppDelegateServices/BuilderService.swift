@@ -13,9 +13,11 @@ class BuilderService: NSObject, UIApplicationDelegate {
         var success: Bool = false
 
         if let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate {
+            let searchViewController = SearchConfigurator.configureSearchScene()
+            let navigationViewController = UINavigationController(rootViewController: searchViewController)
             
             let window = UIWindow(frame: UIScreen.main.bounds)
-            window.rootViewController = UINavigationController(rootViewController: UIViewController())
+            window.rootViewController = navigationViewController
             window.makeKeyAndVisible()
 
             appDelegate.window = window

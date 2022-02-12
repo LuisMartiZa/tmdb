@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37CDC0C7AE469C0ECC2E1312 /* Pods_tmdb_tmdbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EB46BADC54C40AA46F45E /* Pods_tmdb_tmdbUITests.framework */; };
 		8AC0D00BDD3D3609D3F5E795 /* Pods_tmdbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B71972286620A65D2B66D /* Pods_tmdbTests.framework */; };
 		C93DC873A4D5E344D7F3AAD2 /* Pods_tmdb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE35A799B79241EF1D41112 /* Pods_tmdb.framework */; };
 		E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA2E127B6F39F006187C1 /* AppDelegate.swift */; };
@@ -15,17 +14,26 @@
 		E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12FA2EC27B6F3A0006187C1 /* LaunchScreen.storyboard */; };
 		E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA31527B6FD64006187C1 /* AppDelegateServicesConfig.swift */; };
 		E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA31727B6FDC2006187C1 /* BuilderService.swift */; };
+		E12FA32A27B7B136006187C1 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32427B7B136006187C1 /* SearchPresenter.swift */; };
+		E12FA32B27B7B136006187C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32527B7B136006187C1 /* SearchViewController.swift */; };
+		E12FA32C27B7B136006187C1 /* SearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32627B7B136006187C1 /* SearchProtocols.swift */; };
+		E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32727B7B136006187C1 /* SearchInteractor.swift */; };
+		E12FA32E27B7B136006187C1 /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32827B7B136006187C1 /* SearchConfigurator.swift */; };
+		E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32927B7B136006187C1 /* SearchWireframe.swift */; };
+		E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12FA33127B7BFD6006187C1 /* SearchViewController.xib */; };
+		E12FA33527B7C072006187C1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33427B7C072006187C1 /* Configuration.swift */; };
+		E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */; };
+		E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */; };
+		E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33D27B7C671006187C1 /* SearchItem.swift */; };
+		E1B7895727B7DBEF00055B44 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895627B7DBEF00055B44 /* SearchRepository.swift */; };
+		E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895827B7DCB100055B44 /* URL+Utils.swift */; };
+		E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895A27B7E1EE00055B44 /* SearchPage.swift */; };
+		E1B7895E27B808BE00055B44 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */; };
+		E1B7896027B80B8800055B44 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E12FA2F527B6F3A0006187C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E12FA2D627B6F39F006187C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E12FA2DD27B6F39F006187C1;
-			remoteInfo = tmdb;
-		};
-		E12FA2FF27B6F3A0006187C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E12FA2D627B6F39F006187C1 /* Project object */;
 			proxyType = 1;
@@ -49,10 +57,25 @@
 		E12FA2ED27B6F3A0006187C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12FA2EF27B6F3A0006187C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12FA2F427B6F3A0006187C1 /* tmdbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12FA2FE27B6F3A0006187C1 /* tmdbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12FA31527B6FD64006187C1 /* AppDelegateServicesConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateServicesConfig.swift; sourceTree = "<group>"; };
 		E12FA31727B6FDC2006187C1 /* BuilderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderService.swift; sourceTree = "<group>"; };
 		E12FA31F27B7011B006187C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E12FA32427B7B136006187C1 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		E12FA32527B7B136006187C1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E12FA32627B7B136006187C1 /* SearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocols.swift; sourceTree = "<group>"; };
+		E12FA32727B7B136006187C1 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		E12FA32827B7B136006187C1 /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
+		E12FA32927B7B136006187C1 /* SearchWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireframe.swift; sourceTree = "<group>"; };
+		E12FA33127B7BFD6006187C1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E12FA33427B7C072006187C1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		E12FA33D27B7C671006187C1 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		E1B7895627B7DBEF00055B44 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		E1B7895827B7DCB100055B44 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
+		E1B7895A27B7E1EE00055B44 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,14 +93,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC0D00BDD3D3609D3F5E795 /* Pods_tmdbTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E12FA2FB27B6F3A0006187C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37CDC0C7AE469C0ECC2E1312 /* Pods_tmdb_tmdbUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +126,6 @@
 			children = (
 				E12FA2DE27B6F39F006187C1 /* tmdb.app */,
 				E12FA2F427B6F3A0006187C1 /* tmdbTests.xctest */,
-				E12FA2FE27B6F3A0006187C1 /* tmdbUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +193,7 @@
 		E12FA31927B6FEEA006187C1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33027B7B14F006187C1 /* Search */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -186,6 +201,8 @@
 		E12FA31A27B6FEF4006187C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33D27B7C671006187C1 /* SearchItem.swift */,
+				E1B7895A27B7E1EE00055B44 /* SearchPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +210,7 @@
 		E12FA31B27B6FEFD006187C1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7895527B7DBD500055B44 /* Repositories */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -207,6 +225,7 @@
 		E12FA31D27B6FFF9006187C1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33327B7C05D006187C1 /* Configuration */,
 				E12FA31E27B7000B006187C1 /* Extensions */,
 			);
 			path = Util;
@@ -215,6 +234,7 @@
 		E12FA31E27B7000B006187C1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7895827B7DCB100055B44 /* URL+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,6 +242,7 @@
 		E12FA32027B70265006187C1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33627B7C556006187C1 /* Components */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -238,6 +259,71 @@
 			children = (
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E12FA33027B7B14F006187C1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33127B7BFD6006187C1 /* SearchViewController.xib */,
+				E12FA32527B7B136006187C1 /* SearchViewController.swift */,
+				E12FA32427B7B136006187C1 /* SearchPresenter.swift */,
+				E12FA32727B7B136006187C1 /* SearchInteractor.swift */,
+				E12FA32627B7B136006187C1 /* SearchProtocols.swift */,
+				E12FA32827B7B136006187C1 /* SearchConfigurator.swift */,
+				E12FA32927B7B136006187C1 /* SearchWireframe.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E12FA33327B7C05D006187C1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33427B7C072006187C1 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E12FA33627B7C556006187C1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33727B7C56F006187C1 /* CollectionViewCells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E12FA33727B7C56F006187C1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7895C27B808A500055B44 /* LoadingCollectionViewCell */,
+				E12FA33827B7C595006187C1 /* SearchCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E12FA33827B7C595006187C1 /* SearchCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */,
+				E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */,
+			);
+			path = SearchCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E1B7895527B7DBD500055B44 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7895627B7DBEF00055B44 /* SearchRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1B7895C27B808A500055B44 /* LoadingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */,
+				E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */,
+			);
+			path = LoadingCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
@@ -264,6 +350,7 @@
 				E12FA2DA27B6F39F006187C1 /* Sources */,
 				E12FA2DB27B6F39F006187C1 /* Frameworks */,
 				E12FA2DC27B6F39F006187C1 /* Resources */,
+				B925B2D8D77B002A58B92B82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,25 +380,6 @@
 			productReference = E12FA2F427B6F3A0006187C1 /* tmdbTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E12FA2FD27B6F3A0006187C1 /* tmdbUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E12FA30E27B6F3A0006187C1 /* Build configuration list for PBXNativeTarget "tmdbUITests" */;
-			buildPhases = (
-				50345C1AE0A8625979816F06 /* [CP] Check Pods Manifest.lock */,
-				E12FA2FA27B6F3A0006187C1 /* Sources */,
-				E12FA2FB27B6F3A0006187C1 /* Frameworks */,
-				E12FA2FC27B6F3A0006187C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E12FA30027B6F3A0006187C1 /* PBXTargetDependency */,
-			);
-			name = tmdbUITests;
-			productName = tmdbUITests;
-			productReference = E12FA2FE27B6F3A0006187C1 /* tmdbUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,10 +394,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					E12FA2F327B6F3A0006187C1 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = E12FA2DD27B6F39F006187C1;
-					};
-					E12FA2FD27B6F3A0006187C1 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = E12FA2DD27B6F39F006187C1;
 					};
@@ -350,7 +414,6 @@
 			targets = (
 				E12FA2DD27B6F39F006187C1 /* tmdb */,
 				E12FA2F327B6F3A0006187C1 /* tmdbTests */,
-				E12FA2FD27B6F3A0006187C1 /* tmdbUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,6 +425,9 @@
 			files = (
 				E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */,
 				E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */,
+				E1B7896027B80B8800055B44 /* LoadingCollectionViewCell.xib in Resources */,
+				E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */,
+				E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,38 +438,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12FA2FC27B6F3A0006187C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50345C1AE0A8625979816F06 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-tmdb-tmdbUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		631CFF011CA674EAFD12A632 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +485,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B925B2D8D77B002A58B92B82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb/Pods-tmdb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb/Pods-tmdb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tmdb/Pods-tmdb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,20 +509,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */,
+				E12FA32B27B7B136006187C1 /* SearchViewController.swift in Sources */,
 				E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */,
+				E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */,
 				E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */,
+				E12FA32C27B7B136006187C1 /* SearchProtocols.swift in Sources */,
+				E1B7895727B7DBEF00055B44 /* SearchRepository.swift in Sources */,
+				E12FA32E27B7B136006187C1 /* SearchConfigurator.swift in Sources */,
+				E12FA32A27B7B136006187C1 /* SearchPresenter.swift in Sources */,
+				E12FA33527B7C072006187C1 /* Configuration.swift in Sources */,
 				E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */,
+				E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */,
+				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
+				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
+				E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */,
+				E1B7895E27B808BE00055B44 /* LoadingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E12FA2F027B6F3A0006187C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E12FA2FA27B6F3A0006187C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,11 +542,6 @@
 			isa = PBXTargetDependency;
 			target = E12FA2DD27B6F39F006187C1 /* tmdb */;
 			targetProxy = E12FA2F527B6F3A0006187C1 /* PBXContainerItemProxy */;
-		};
-		E12FA30027B6F3A0006187C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E12FA2DD27B6F39F006187C1 /* tmdb */;
-			targetProxy = E12FA2FF27B6F3A0006187C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -718,44 +773,6 @@
 			};
 			name = Release;
 		};
-		E12FA30F27B6F3A0006187C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E012A3D61D9D7BEBB38DB5E /* Pods-tmdb-tmdbUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4G8ZN2NQU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdbUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = tmdb;
-			};
-			name = Debug;
-		};
-		E12FA31027B6F3A0006187C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 812492C8ABD1F553D8EF5894 /* Pods-tmdb-tmdbUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4G8ZN2NQU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdbUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = tmdb;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -782,15 +799,6 @@
 			buildConfigurations = (
 				E12FA30C27B6F3A0006187C1 /* Debug */,
 				E12FA30D27B6F3A0006187C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E12FA30E27B6F3A0006187C1 /* Build configuration list for PBXNativeTarget "tmdbUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E12FA30F27B6F3A0006187C1 /* Debug */,
-				E12FA31027B6F3A0006187C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
