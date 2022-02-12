@@ -19,7 +19,7 @@ enum SearchRepositoryError: Error {
 
 class SearchRepository: SearchRepositoryProtocol {
     func getSearchList(by text: String, page: Int = 1) -> Promise<[String : Any]> {
-        let url = URLs.baseURL.value()
+        let url = URLs.searchURL.value()
                     .appending("query", value: text)
                     .appending("page", value: String(page))
         
