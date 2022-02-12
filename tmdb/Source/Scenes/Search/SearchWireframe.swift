@@ -8,7 +8,6 @@
 import UIKit
 
 class SearchWireframe {
-
     weak var viewController: UIViewController?
 }
 

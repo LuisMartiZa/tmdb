@@ -21,6 +21,10 @@
 		E12FA32E27B7B136006187C1 /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32827B7B136006187C1 /* SearchConfigurator.swift */; };
 		E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA32927B7B136006187C1 /* SearchWireframe.swift */; };
 		E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12FA33127B7BFD6006187C1 /* SearchViewController.xib */; };
+		E12FA33527B7C072006187C1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33427B7C072006187C1 /* Configuration.swift */; };
+		E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */; };
+		E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */; };
+		E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33D27B7C671006187C1 /* SearchItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		E12FA32827B7B136006187C1 /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
 		E12FA32927B7B136006187C1 /* SearchWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireframe.swift; sourceTree = "<group>"; };
 		E12FA33127B7BFD6006187C1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E12FA33427B7C072006187C1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		E12FA33D27B7C671006187C1 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +191,7 @@
 		E12FA31A27B6FEF4006187C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33D27B7C671006187C1 /* SearchItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 		E12FA31D27B6FFF9006187C1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33327B7C05D006187C1 /* Configuration */,
 				E12FA31E27B7000B006187C1 /* Extensions */,
 			);
 			path = Util;
@@ -219,6 +229,7 @@
 		E12FA32027B70265006187C1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E12FA33627B7C556006187C1 /* Components */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -249,6 +260,39 @@
 				E12FA32927B7B136006187C1 /* SearchWireframe.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		E12FA33327B7C05D006187C1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33427B7C072006187C1 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E12FA33627B7C556006187C1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33727B7C56F006187C1 /* CollectionViewCells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E12FA33727B7C56F006187C1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33827B7C595006187C1 /* SearchCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E12FA33827B7C595006187C1 /* SearchCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */,
+				E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */,
+			);
+			path = SearchCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
@@ -350,6 +394,7 @@
 			files = (
 				E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */,
 				E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */,
+				E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */,
 				E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +477,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */,
 				E12FA32B27B7B136006187C1 /* SearchViewController.swift in Sources */,
 				E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */,
+				E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */,
 				E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */,
 				E12FA32C27B7B136006187C1 /* SearchProtocols.swift in Sources */,
 				E12FA32E27B7B136006187C1 /* SearchConfigurator.swift in Sources */,
 				E12FA32A27B7B136006187C1 /* SearchPresenter.swift in Sources */,
+				E12FA33527B7C072006187C1 /* Configuration.swift in Sources */,
 				E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */,
 				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
 				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
