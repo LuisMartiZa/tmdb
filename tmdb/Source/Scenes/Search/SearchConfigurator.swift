@@ -10,7 +10,8 @@ import UIKit
 class SearchConfigurator {
     class func configureSearchScene() -> SearchViewController {
         let viewController = SearchViewController()
-        let interactor = SearchInteractor()
+        let repository = SearchRepository()
+        let interactor = SearchInteractor(repository)
         let wireframe = SearchWireframe()
         let presenter = SearchPresenter(view: viewController,
                                                           interactor: interactor,

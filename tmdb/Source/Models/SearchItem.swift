@@ -15,14 +15,14 @@ class SearchItem {
     
     init?(json: [String: Any]) {
         guard let title = json["title"] as? String,
-              let voteAverage = json["vote_average"] as? String,
+              let voteAverage = json["vote_average"] as? Double,
               let description = json["overview"] as? String,
               let posterPath = json["poster_path"] as? String else {
                   return nil
               }
         
         self.title = title
-        self.voteAverage = voteAverage
+        self.voteAverage = String(voteAverage)
         self.overview = description
         self.posterURL = Secret.imageBase.rawValue + posterPath
     }

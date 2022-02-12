@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 protocol SearchViewProtocol: AnyObject {
     func reloadData()
@@ -24,6 +25,7 @@ protocol SearchPresenterProtocol: AnyObject {
 }
 
 protocol SearchInteractorProtocol: AnyObject {
+    func getSearchList(by text: String) -> Promise<[SearchItem]>
 }
 
 protocol SearchWireframeProtocol: AnyObject {

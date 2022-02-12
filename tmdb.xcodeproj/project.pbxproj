@@ -25,6 +25,9 @@
 		E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */; };
 		E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */; };
 		E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12FA33D27B7C671006187C1 /* SearchItem.swift */; };
+		E1B7895727B7DBEF00055B44 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895627B7DBEF00055B44 /* SearchRepository.swift */; };
+		E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895827B7DCB100055B44 /* URL+Utils.swift */; };
+		E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895A27B7E1EE00055B44 /* SearchPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		E12FA33927B7C5B7006187C1 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		E12FA33D27B7C671006187C1 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		E1B7895627B7DBEF00055B44 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		E1B7895827B7DCB100055B44 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
+		E1B7895A27B7E1EE00055B44 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				E12FA33D27B7C671006187C1 /* SearchItem.swift */,
+				E1B7895A27B7E1EE00055B44 /* SearchPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 		E12FA31B27B6FEFD006187C1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7895527B7DBD500055B44 /* Repositories */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 		E12FA31E27B7000B006187C1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7895827B7DCB100055B44 /* URL+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +302,14 @@
 				E12FA33A27B7C5B7006187C1 /* SearchCollectionViewCell.xib */,
 			);
 			path = SearchCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E1B7895527B7DBD500055B44 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7895627B7DBEF00055B44 /* SearchRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
@@ -483,12 +500,15 @@
 				E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */,
 				E12FA31827B6FDC2006187C1 /* BuilderService.swift in Sources */,
 				E12FA32C27B7B136006187C1 /* SearchProtocols.swift in Sources */,
+				E1B7895727B7DBEF00055B44 /* SearchRepository.swift in Sources */,
 				E12FA32E27B7B136006187C1 /* SearchConfigurator.swift in Sources */,
 				E12FA32A27B7B136006187C1 /* SearchPresenter.swift in Sources */,
 				E12FA33527B7C072006187C1 /* Configuration.swift in Sources */,
 				E12FA2E227B6F39F006187C1 /* AppDelegate.swift in Sources */,
+				E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */,
 				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
 				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
+				E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
