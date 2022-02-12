@@ -13,4 +13,7 @@ class MovieDetailWireframe {
 }
 
 extension MovieDetailWireframe: MovieDetailWireframeProtocol {
+    func dismissView() {
+        viewController?.dismiss(animated: true, completion: nil)
+    }
 }

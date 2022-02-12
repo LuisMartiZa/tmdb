@@ -42,6 +42,7 @@
 		E1B7897527B82F3800055B44 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1B7897427B82F3800055B44 /* Localizable.strings */; };
 		E1B7897727B82F5D00055B44 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897627B82F5D00055B44 /* Localized.swift */; };
 		E1B7897927B82FA100055B44 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897827B82FA100055B44 /* String+Localized.swift */; };
+		E1B7897B27B8332200055B44 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897A27B8332200055B44 /* UIViewController+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		E1B7897427B82F3800055B44 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E1B7897627B82F5D00055B44 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		E1B7897827B82FA100055B44 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		E1B7897A27B8332200055B44 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,6 +266,7 @@
 			children = (
 				E1B7895827B7DCB100055B44 /* URL+Utils.swift */,
 				E1B7897827B82FA100055B44 /* String+Localized.swift */,
+				E1B7897A27B8332200055B44 /* UIViewController+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				E1B7896C27B81B6400055B44 /* MovieDetailConfigurator.swift in Sources */,
 				E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */,
 				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
+				E1B7897B27B8332200055B44 /* UIViewController+Utils.swift in Sources */,
 				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
 				E1B7897727B82F5D00055B44 /* Localized.swift in Sources */,
 				E1B7896D27B81B6400055B44 /* MovieDetailWireframe.swift in Sources */,

@@ -51,6 +51,10 @@ extension MovieDetailPresenter: MovieDetailPresenterProtocol {
     func getOverview() -> String {
         movie.overview
     }
+    
+    func dismissView() {
+        wireframe?.dismissView()
+    }
 }
 
 private extension MovieDetailPresenter {

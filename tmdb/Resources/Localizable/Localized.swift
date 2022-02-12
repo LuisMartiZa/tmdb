@@ -14,6 +14,7 @@ enum Localized {
     static let searchControllerPlaceholder = "SearchControllerPlaceholder".localized
     
     // MARK: - Errors
+    static let errorTitle = "ErrorTitle".localized
     static let errorGetItem = "ErrorGetItem".localized
     static let errorParseElement = "ErrorParseElement".localized
     static let errorParseJSON = "ErrorJSON".localized

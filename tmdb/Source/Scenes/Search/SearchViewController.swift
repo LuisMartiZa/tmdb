@@ -47,7 +47,8 @@ extension SearchViewController: SearchViewProtocol {
     
     func displayError(_ error: String) {
         reloadData()
-        //TODO: Show alert
+        
+        showAlert(title: Localized.errorTitle, body: error)
     }
 }
 
