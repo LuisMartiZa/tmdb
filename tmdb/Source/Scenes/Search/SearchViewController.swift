@@ -90,8 +90,8 @@ extension SearchViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension SearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat =  295
-        let height: CGFloat = 90
+        let width: CGFloat = collectionView.bounds.width
+        let height: CGFloat = 200
         return CGSize(width: width, height: height)
     }
 }

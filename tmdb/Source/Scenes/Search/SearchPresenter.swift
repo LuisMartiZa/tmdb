@@ -49,11 +49,15 @@ extension SearchPresenter: SearchPresenterProtocol {
     
     func search(_ text: String) {
         interactor?.getSearchList(by: text).done({ searchItems in
-            self.searchs += searchItems
+            self.searchs = searchItems
             self.view?.reloadData()
         }).catch({ error in
             self.view?.displayError(error.localizedDescription)
         })
+    }
+    
+    func nextPage() {
+        //TODO: call interactor for next page if needed
     }
     
     func cleanSearch() {

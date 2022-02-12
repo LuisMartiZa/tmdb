@@ -22,6 +22,7 @@ protocol SearchPresenterProtocol: AnyObject {
     func numberOfItems(section: Int) -> Int
     
     func searchItem(for row: Int) -> SearchItem?
+    func nextPage()
 }
 
 protocol SearchInteractorProtocol: AnyObject {
