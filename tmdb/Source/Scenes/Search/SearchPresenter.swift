@@ -46,7 +46,11 @@ extension SearchPresenter: SearchPresenterProtocol {
     }
     
     func didSelect(row: Int, section: Int) {
-        
+        if let searchItem = searchItem(for: row) {
+            wireframe?.showMovieDetail(searchItem.id)
+        } else {
+            view?.displayError(Localized.errorGetItem)
+        }
     }
     
     func shouldShowLoadingCell() -> Bool {

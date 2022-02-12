@@ -36,4 +36,5 @@ protocol SearchInteractorProtocol: AnyObject {
 }
 
 protocol SearchWireframeProtocol: AnyObject {
+    func showMovieDetail(_ movieID: String)
 }
