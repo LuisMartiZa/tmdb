@@ -1,3 +1,10 @@
+//
+//  MovieDetailInteractor.swift
+//  tmdb
+//
+//  Created by Luís Fernando Martínez Zarza on 12/2/22.
+//
+
 import Foundation
 import PromiseKit
 
@@ -20,7 +27,7 @@ extension MovieDetailInteractor: MovieDetailInteractorProtocol {
                 if let movie = Movie(json: json) {
                     seal.fulfill(movie)
                 } else {
-                    seal.reject(MovieDetailInteractorError.getMovieDetailError("Unkown parse element"))
+                    seal.reject(MovieDetailInteractorError.getMovieDetailError(Localized.errorParseElement))
                 }
             }).catch { error in
                 seal.reject(MovieDetailInteractorError.getMovieDetailError(error.localizedDescription))

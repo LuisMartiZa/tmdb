@@ -131,7 +131,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - Private methods
 private extension SearchViewController {
     func setupView() {
-        title = "TMDB Search Engine"
+        title = Localized.searchTitle
         
         setupCollectionView()
         setupSearchController()
@@ -153,7 +153,7 @@ private extension SearchViewController {
     func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search here..."
+        searchController.searchBar.placeholder = Localized.searchControllerPlaceholder
         
         navigationItem.searchController = searchController
         definesPresentationContext = true

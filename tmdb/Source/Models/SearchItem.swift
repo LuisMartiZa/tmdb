@@ -26,7 +26,7 @@ class SearchItem {
         self.id = String(id)
         self.title = title
         self.voteAverage = String(voteAverage)
-        self.overview = description == "" ? "No overview" : description
+        self.overview = description == "" ? Localized.noOverviewText : description
         self.posterURL = Secret.imageBase.rawValue + posterPath
     }
 }

@@ -39,6 +39,9 @@
 		E1B7896F27B81B7700055B44 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B7896E27B81B7700055B44 /* MovieDetailViewController.xib */; };
 		E1B7897127B81F8500055B44 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897027B81F8500055B44 /* Movie.swift */; };
 		E1B7897327B821B600055B44 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897227B821B600055B44 /* MovieRepository.swift */; };
+		E1B7897527B82F3800055B44 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1B7897427B82F3800055B44 /* Localizable.strings */; };
+		E1B7897727B82F5D00055B44 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897627B82F5D00055B44 /* Localized.swift */; };
+		E1B7897927B82FA100055B44 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897827B82FA100055B44 /* String+Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		E1B7896E27B81B7700055B44 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		E1B7897027B81F8500055B44 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E1B7897227B821B600055B44 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		E1B7897427B82F3800055B44 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E1B7897627B82F5D00055B44 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		E1B7897827B82FA100055B44 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +244,8 @@
 		E12FA31C27B6FFAD006187C1 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7897427B82F3800055B44 /* Localizable.strings */,
+				E1B7897627B82F5D00055B44 /* Localized.swift */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B7895827B7DCB100055B44 /* URL+Utils.swift */,
+				E1B7897827B82FA100055B44 /* String+Localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +470,7 @@
 				E1B7896F27B81B7700055B44 /* MovieDetailViewController.xib in Resources */,
 				E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */,
 				E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */,
+				E1B7897527B82F3800055B44 /* Localizable.strings in Resources */,
 				E1B7896027B80B8800055B44 /* LoadingCollectionViewCell.xib in Resources */,
 				E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */,
 				E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */,
@@ -549,6 +559,7 @@
 				E12FA33E27B7C671006187C1 /* SearchItem.swift in Sources */,
 				E12FA32B27B7B136006187C1 /* SearchViewController.swift in Sources */,
 				E1B7897127B81F8500055B44 /* Movie.swift in Sources */,
+				E1B7897927B82FA100055B44 /* String+Localized.swift in Sources */,
 				E12FA31627B6FD64006187C1 /* AppDelegateServicesConfig.swift in Sources */,
 				E12FA33B27B7C5B7006187C1 /* SearchCollectionViewCell.swift in Sources */,
 				E1B7896A27B81B6400055B44 /* MovieDetailProtocols.swift in Sources */,
@@ -565,6 +576,7 @@
 				E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */,
 				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
 				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
+				E1B7897727B82F5D00055B44 /* Localized.swift in Sources */,
 				E1B7896D27B81B6400055B44 /* MovieDetailWireframe.swift in Sources */,
 				E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */,
 				E1B7896927B81B6400055B44 /* MovieDetailViewController.swift in Sources */,

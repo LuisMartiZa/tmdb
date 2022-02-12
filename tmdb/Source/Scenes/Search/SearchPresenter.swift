@@ -49,7 +49,7 @@ extension SearchPresenter: SearchPresenterProtocol {
         if let searchItem = searchItem(for: row) {
             wireframe?.showMovieDetail(searchItem.id)
         } else {
-            view?.displayError("Error al recuperar el item")
+            view?.displayError(Localized.errorGetItem)
         }
     }
     

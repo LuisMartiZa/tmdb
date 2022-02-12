@@ -28,7 +28,7 @@ class MovieRepository: MovieRepositoryProtocol {
                     if let json = response.value as? [String:Any] {
                         seal.fulfill(json)
                     } else {
-                        seal.reject(MovieRepositoryError.getMovieDetailError("JSON Malformed"))
+                        seal.reject(MovieRepositoryError.getMovieDetailError(Localized.errorParseJSON))
                     }
                 case .failure(let error):
                     seal.reject(MovieRepositoryError.getMovieDetailError(error.localizedDescription))

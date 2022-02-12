@@ -30,7 +30,7 @@ class SearchRepository: SearchRepositoryProtocol {
                     if let json = response.value as? [String:Any] {
                         seal.fulfill(json)
                     } else {
-                        seal.reject(SearchRepositoryError.getSearchListError("JSON Malformed"))
+                        seal.reject(SearchRepositoryError.getSearchListError(Localized.errorParseJSON))
                     }
                 case .failure(let error):
                     seal.reject(SearchRepositoryError.getSearchListError(error.localizedDescription))
