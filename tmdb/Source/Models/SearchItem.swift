@@ -23,7 +23,7 @@ class SearchItem {
         
         self.title = title
         self.voteAverage = String(voteAverage)
-        self.overview = description
+        self.overview = description == "" ? "No overview" : description
         self.posterURL = Secret.imageBase.rawValue + posterPath
     }
 }

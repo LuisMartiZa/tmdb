@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
     let typeInterval: TimeInterval = 1.0
     
     var lastSearchString: String = ""
-
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,11 @@ class SearchViewController: UIViewController {
 extension SearchViewController: SearchViewProtocol {
     func reloadData() {
         collectionView.reloadData()
+    }
+    
+    func cleanSearch() {
+        lastSearchString = ""
+        reloadData()
     }
     
     func displayError(_ error: String) {
@@ -63,6 +68,15 @@ extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter?.didSelect(row: indexPath.row, section: indexPath.section)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let presenter = presenter,
+              presenter.isLoadingIndexPath(indexPath) else {
+                  return
+              }
+        
+        presenter.nextPage(for: lastSearchString)
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -71,19 +85,33 @@ extension SearchViewController: UICollectionViewDataSource {
         presenter?.numberOfSections() ?? 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        presenter?.numberOfItems(section: section) ?? 0
+        guard let presenter = presenter else {
+            return 0
+        }
+        let numberOfItems = presenter.numberOfItems(section: section)
+        return presenter.shouldShowLoadingCell() ? numberOfItems + 1 : numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.reuseIdenfier, for: indexPath)
-        
-        if let presenter = presenter,
-           let searchItem = presenter.searchItem(for: indexPath.row),
-           let searchCell = cell as? SearchCollectionViewCell {
-            searchCell.setData(from: searchItem)
+        guard let presenter = presenter else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+            return cell
         }
         
-        return cell
+        if presenter.isLoadingIndexPath(indexPath) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LoadingCollectionViewCell.reuseIdenfier, for: indexPath)
+            
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.reuseIdenfier, for: indexPath)
+            
+            if let searchItem = presenter.searchItem(for: indexPath.row),
+               let searchCell = cell as? SearchCollectionViewCell {
+                searchCell.setData(from: searchItem)
+            }
+            
+            return cell
+        }
     }
 }
 
@@ -91,7 +119,11 @@ extension SearchViewController: UICollectionViewDataSource {
 extension SearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width: CGFloat = collectionView.bounds.width
-        let height: CGFloat = 200
+        var height: CGFloat = 200
+        if let isLoadingCell = presenter?.isLoadingIndexPath(indexPath),
+           isLoadingCell {
+            height = 100
+        }
         return CGSize(width: width, height: height)
     }
 }
@@ -115,6 +147,7 @@ private extension SearchViewController {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 
         collectionView.register(UINib(nibName: SearchCollectionViewCell.nibName, bundle: nil), forCellWithReuseIdentifier: SearchCollectionViewCell.reuseIdenfier)
+        collectionView.register(UINib(nibName: LoadingCollectionViewCell.nibName, bundle: nil), forCellWithReuseIdentifier: LoadingCollectionViewCell.reuseIdenfier)
     }
     
     func setupSearchController() {

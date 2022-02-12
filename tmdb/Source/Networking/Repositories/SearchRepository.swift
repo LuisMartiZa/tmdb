@@ -10,7 +10,7 @@ import Alamofire
 import PromiseKit
 
 protocol SearchRepositoryProtocol {
-    func getSearchList(by text: String) -> Promise<[String:Any]>
+    func getSearchList(by text: String, page: Int) -> Promise<[String:Any]>
 }
 
 enum SearchRepositoryError: Error {
@@ -18,8 +18,11 @@ enum SearchRepositoryError: Error {
 }
 
 class SearchRepository: SearchRepositoryProtocol {
-    func getSearchList(by text: String) -> Promise<[String : Any]> {
-        let url = URLs.baseURL.value().appending("query", value: text)
+    func getSearchList(by text: String, page: Int = 1) -> Promise<[String : Any]> {
+        let url = URLs.baseURL.value()
+                    .appending("query", value: text)
+                    .appending("page", value: String(page))
+        
         return Promise<[String:Any]> { seal in
             AF.request(url).responseJSON { response in
                 switch response.result {

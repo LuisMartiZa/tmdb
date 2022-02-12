@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class SearchPresenter {
     // MARK: - Variables
@@ -13,7 +14,8 @@ class SearchPresenter {
     let interactor: SearchInteractorProtocol?
     let wireframe: SearchWireframeProtocol?
     
-    var searchs: [SearchItem] = []
+    private var searchs: [SearchItem] = []
+    private var shouldLoadingCell = false
 
     // MARK: - Init
     init(view: SearchViewProtocol?,
@@ -47,22 +49,45 @@ extension SearchPresenter: SearchPresenterProtocol {
         
     }
     
+    func shouldShowLoadingCell() -> Bool {
+        shouldLoadingCell
+    }
+    
+    func isLoadingIndexPath(_ indexPath: IndexPath) -> Bool {
+        guard shouldLoadingCell,
+              numberOfItems(section: indexPath.section) > 0 else {
+                  return false
+              }
+        
+        return indexPath.row == numberOfItems(section: indexPath.section)
+    }
+    
     func search(_ text: String) {
         interactor?.getSearchList(by: text).done({ searchItems in
             self.searchs = searchItems
+            self.shouldLoadingCell = self.interactor?.shouldShowLoadingCell() ?? false
             self.view?.reloadData()
         }).catch({ error in
             self.view?.displayError(error.localizedDescription)
         })
     }
     
-    func nextPage() {
-        //TODO: call interactor for next page if needed
+    func nextPage(for text: String) {
+        interactor?.getNextPage(for: text).done({ searchItems in
+            if !searchItems.isEmpty {
+                self.shouldLoadingCell = self.interactor?.shouldShowLoadingCell() ?? false
+                self.searchs += searchItems
+                self.view?.reloadData()
+            }
+        }).catch({ error in
+            self.view?.displayError(error.localizedDescription)
+        })
     }
     
     func cleanSearch() {
         searchs = []
-        view?.reloadData()
+        shouldLoadingCell = false
+        view?.cleanSearch()
     }
 }
 

@@ -28,6 +28,8 @@
 		E1B7895727B7DBEF00055B44 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895627B7DBEF00055B44 /* SearchRepository.swift */; };
 		E1B7895927B7DCB100055B44 /* URL+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895827B7DCB100055B44 /* URL+Utils.swift */; };
 		E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895A27B7E1EE00055B44 /* SearchPage.swift */; };
+		E1B7895E27B808BE00055B44 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */; };
+		E1B7896027B80B8800055B44 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		E1B7895627B7DBEF00055B44 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		E1B7895827B7DCB100055B44 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
 		E1B7895A27B7E1EE00055B44 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +294,7 @@
 		E12FA33727B7C56F006187C1 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7895C27B808A500055B44 /* LoadingCollectionViewCell */,
 				E12FA33827B7C595006187C1 /* SearchCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -310,6 +315,15 @@
 				E1B7895627B7DBEF00055B44 /* SearchRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1B7895C27B808A500055B44 /* LoadingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7895D27B808BE00055B44 /* LoadingCollectionViewCell.swift */,
+				E1B7895F27B80B8800055B44 /* LoadingCollectionViewCell.xib */,
+			);
+			path = LoadingCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
@@ -411,6 +425,7 @@
 			files = (
 				E12FA2EE27B6F3A0006187C1 /* LaunchScreen.storyboard in Resources */,
 				E12FA2EB27B6F3A0006187C1 /* Assets.xcassets in Resources */,
+				E1B7896027B80B8800055B44 /* LoadingCollectionViewCell.xib in Resources */,
 				E12FA33C27B7C5B7006187C1 /* SearchCollectionViewCell.xib in Resources */,
 				E12FA33227B7BFD6006187C1 /* SearchViewController.xib in Resources */,
 			);
@@ -509,6 +524,7 @@
 				E12FA32D27B7B136006187C1 /* SearchInteractor.swift in Sources */,
 				E12FA32F27B7B136006187C1 /* SearchWireframe.swift in Sources */,
 				E1B7895B27B7E1EE00055B44 /* SearchPage.swift in Sources */,
+				E1B7895E27B808BE00055B44 /* LoadingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
