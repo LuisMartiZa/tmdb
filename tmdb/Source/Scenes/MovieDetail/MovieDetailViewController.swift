@@ -35,9 +35,10 @@ extension MovieDetailViewController: MovieDetailViewProtocol {
     }
     
     func displayError(_ error: String) {
-        
+        showAlert(title: Localized.errorTitle, body: error) {
+            self.presenter?.dismissView()
+        }
     }
-    
 }
 
 // MARK: - Private methods

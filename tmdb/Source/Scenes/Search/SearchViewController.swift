@@ -18,8 +18,6 @@ class SearchViewController: UIViewController {
     var dispatchWorkItem: DispatchWorkItem? = nil
     let typeInterval: TimeInterval = 1.0
     
-    var lastSearchString: String = ""
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,20 +39,20 @@ extension SearchViewController: SearchViewProtocol {
     }
     
     func cleanSearch() {
-        lastSearchString = ""
         reloadData()
     }
     
     func displayError(_ error: String) {
         reloadData()
-        //TODO: Show alert
+        
+        showAlert(title: Localized.errorTitle, body: error)
     }
 }
 
 extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if let text = searchController.searchBar.text, text.count > 3 {
-            if text != lastSearchString {
+            if text != presenter?.getLastSearch() ?? "" {
                 handleTyping(text)
             }
         } else {
@@ -75,7 +73,7 @@ extension SearchViewController: UICollectionViewDelegate {
                   return
               }
         
-        presenter.nextPage(for: lastSearchString)
+        presenter.nextPage()
     }
 }
 
@@ -168,7 +166,6 @@ private extension SearchViewController {
         
         dispatchWorkItem = DispatchWorkItem(block: { [weak self] in
             guard let self = self else { return }
-            self.lastSearchString = text
             self.presenter?.search(text)
         })
         

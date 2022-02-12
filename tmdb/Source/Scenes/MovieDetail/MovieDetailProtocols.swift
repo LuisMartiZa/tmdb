@@ -19,6 +19,8 @@ protocol MovieDetailPresenterProtocol: AnyObject {
     func getTitle() -> String
     func getVoteAverage() -> String
     func getOverview() -> String
+    
+    func dismissView()
 }
 
 protocol MovieDetailInteractorProtocol: AnyObject {
@@ -26,4 +28,5 @@ protocol MovieDetailInteractorProtocol: AnyObject {
 }
 
 protocol MovieDetailWireframeProtocol: AnyObject {
+    func dismissView()
 }

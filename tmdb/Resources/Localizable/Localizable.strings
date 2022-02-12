@@ -11,6 +11,7 @@
 "SearchControllerPlaceholder" = "Search here...";
 
 // Error
+"ErrorTitle" = "ERROR";
 "ErrorGetItem" = "Error when get item";
 "ErrorParseElement" = "Unkown parse element";
 "ErrorJSON" = "JSON Malformed";

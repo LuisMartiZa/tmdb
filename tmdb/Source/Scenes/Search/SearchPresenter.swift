@@ -16,6 +16,7 @@ class SearchPresenter {
     
     private var searchs: [SearchItem] = []
     private var shouldLoadingCell = false
+    private var lastSearchString: String = ""
 
     // MARK: - Init
     init(view: SearchViewProtocol?,
@@ -45,6 +46,10 @@ extension SearchPresenter: SearchPresenterProtocol {
         return nil
     }
     
+    func getLastSearch() -> String {
+        lastSearchString
+    }
+    
     func didSelect(row: Int, section: Int) {
         if let searchItem = searchItem(for: row) {
             wireframe?.showMovieDetail(searchItem.id)
@@ -67,6 +72,8 @@ extension SearchPresenter: SearchPresenterProtocol {
     }
     
     func search(_ text: String) {
+        lastSearchString = text
+        
         interactor?.getSearchList(by: text).done({ searchItems in
             self.searchs = searchItems
             self.shouldLoadingCell = self.interactor?.shouldShowLoadingCell() ?? false
@@ -76,8 +83,8 @@ extension SearchPresenter: SearchPresenterProtocol {
         })
     }
     
-    func nextPage(for text: String) {
-        interactor?.getNextPage(for: text).done({ searchItems in
+    func nextPage() {
+        interactor?.getNextPage(for: lastSearchString).done({ searchItems in
             if !searchItems.isEmpty {
                 self.shouldLoadingCell = self.interactor?.shouldShowLoadingCell() ?? false
                 self.searchs += searchItems
@@ -91,7 +98,9 @@ extension SearchPresenter: SearchPresenterProtocol {
     func cleanSearch() {
         searchs = []
         shouldLoadingCell = false
-        view?.cleanSearch()
+        lastSearchString = ""
+        
+        view?.reloadData()
     }
 }
 

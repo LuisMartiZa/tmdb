@@ -10,7 +10,6 @@ import PromiseKit
 
 protocol SearchViewProtocol: AnyObject {
     func reloadData()
-    func cleanSearch()
     func displayError(_ error: String)
 }
 
@@ -21,11 +20,12 @@ protocol SearchPresenterProtocol: AnyObject {
     func shouldShowLoadingCell() -> Bool
     func isLoadingIndexPath(_ indexPath: IndexPath) -> Bool
     
+    func getLastSearch() -> String
     func numberOfSections() -> Int
     func numberOfItems(section: Int) -> Int
     
     func searchItem(for row: Int) -> SearchItem?
-    func nextPage(for text: String)
+    func nextPage()
 }
 
 protocol SearchInteractorProtocol: AnyObject {
