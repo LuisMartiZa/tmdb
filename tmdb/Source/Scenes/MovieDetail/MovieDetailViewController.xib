@@ -23,14 +23,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-rc-VJ9">
-                    <rect key="frame" x="0.0" y="44" width="414" height="310.5"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-rc-VJ9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="414"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="6XA-rc-VJ9" secondAttribute="height" multiplier="4:3" id="YAP-M6-hsu"/>
+                        <constraint firstAttribute="width" secondItem="6XA-rc-VJ9" secondAttribute="height" multiplier="3:3" id="YAP-M6-hsu"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klb-A4-adZ">
-                    <rect key="frame" x="0.0" y="354.5" width="414" height="507.5"/>
+                    <rect key="frame" x="0.0" y="458" width="414" height="404"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWv-pb-X6t">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -40,13 +40,13 @@
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="gSm-gu-mMg" secondAttribute="height" multiplier="12:3" id="9af-cw-oKJ"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-4u-5Tr">
                                     <rect key="frame" x="280" y="0.0" width="134" height="70"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -55,11 +55,11 @@
                                 <constraint firstAttribute="height" constant="70" id="eTH-gM-0yU"/>
                             </constraints>
                         </stackView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDP-DM-mO7">
-                            <rect key="frame" x="0.0" y="70" width="414" height="437.5"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDP-DM-mO7">
+                            <rect key="frame" x="0.0" y="70" width="414" height="334"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <color key="textColor" systemColor="labelColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </subviews>

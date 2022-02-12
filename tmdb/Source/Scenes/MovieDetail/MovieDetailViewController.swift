@@ -13,13 +13,14 @@ class MovieDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         presenter?.viewDidLoad()
     }
 }
 
 // MARK: - MovieDetailViewProtocol
 extension MovieDetailViewController: MovieDetailViewProtocol {
-    func setupView() {
+    func refreshData() {
         posterImageView.kf.setImage(with: presenter?.getPosterURL())
         titleLabel.text = presenter?.getTitle()
         voteAverageLabel.text = presenter?.getVoteAverage()
@@ -34,4 +35,7 @@ extension MovieDetailViewController: MovieDetailViewProtocol {
 
 // MARK: - Private methods
 private extension MovieDetailViewController {
+    func setupView() {
+        overviewTextView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
 }

@@ -23,7 +23,7 @@ extension MovieDetailPresenter: MovieDetailPresenterProtocol {
         // Make request to get info from endpoint
         interactor?.getMovieDetail(by: movieID).done({ movie in
             self.movie = movie
-            self.view?.setupView()
+            self.view?.refreshData()
         }).catch({ error in
             self.view?.displayError(error.localizedDescription)
         })

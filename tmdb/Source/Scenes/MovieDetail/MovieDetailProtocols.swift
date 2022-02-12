@@ -2,7 +2,7 @@ import Foundation
 import PromiseKit
 
 protocol MovieDetailViewProtocol: AnyObject {
-    func setupView()
+    func refreshData()
     func displayError(_ error: String)
 }
 

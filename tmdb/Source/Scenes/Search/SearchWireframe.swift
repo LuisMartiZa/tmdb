@@ -12,4 +12,8 @@ class SearchWireframe {
 }
 
 extension SearchWireframe: SearchWireframeProtocol {
+    func showMovieDetail(_ movieID: String) {
+        let movieDetailViewController = MovieDetailConfigurator.configureMovieDetailScene(movieID: movieID)
+        viewController?.present(movieDetailViewController, animated: true)
+    }
 }
