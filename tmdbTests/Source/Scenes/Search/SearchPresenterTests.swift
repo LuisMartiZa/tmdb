@@ -147,11 +147,52 @@ class SearchPresenterTests: XCTestCase {
     func isLoadingIndexPath(_ indexPath: IndexPath){
     }
     
-    func search(_ text: String) {
+    func testIsLoadingIndexPath_WhenIndexPathAreEqualThatLoadingIndexPath() {
+        // Given
+        let indexPath = IndexPath(row: 2, section: 1)
+        let searchs = SearchItemFactory.getSearchItemArrayRandom(with: 2)
+        // When
+        sut.searchs = searchs
+        sut.shouldLoadingCell = true
+        let isLoading = sut.isLoadingIndexPath(indexPath)
+        // Then
+        XCTAssertTrue(isLoading)
     }
     
-    func nextPage() {
+    func testIsLoadingIndexPath_WhenIndexPathAreNotEqualThatLoadingIndexPath() {
+        // Given
+        let indexPath = IndexPath(row: 1, section: 1)
+        let searchs = SearchItemFactory.getSearchItemArrayRandom(with: 2)
+        // When
+        sut.searchs = searchs
+        sut.shouldLoadingCell = true
+        let isLoading = sut.isLoadingIndexPath(indexPath)
+        // Then
+        XCTAssertFalse(isLoading)
+    }
+    
+    func testSearch_WithRandomString() {
+        // Given
+        let lastSearchString = StringFactory.createRandomString()
+        // When
+        _ = interactor.getSearchList(by: lastSearchString)
+        view.reloadData()
         
+        // Then
+        XCTAssertTrue(interactor.getSearchListCalled)
+        XCTAssertTrue(view.reloadDataCalled)
+    }
+    
+    func testNextPage_WithRandomString() {
+        // Given
+        let lastSearchString = StringFactory.createRandomString()
+        // When
+        _ = interactor.getNextPage(for: lastSearchString)
+        view.reloadData()
+        
+        // Then
+        XCTAssertTrue(interactor.getNextPageCalled)
+        XCTAssertTrue(view.reloadDataCalled)
     }
     
     func testCleanSearch_IfSearchShouldLoadingCellAndLastSearchStringAreEmpty() {
