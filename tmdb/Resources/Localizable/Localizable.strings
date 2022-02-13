@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  tmdb
+
+  Created by Luís Fernando Martínez Zarza on 12/2/22.
+  
+*/
+// General
+"SearchTitle" = "TMDB Search Engine";
+"NoOverview" = "No overview";
+"SearchControllerPlaceholder" = "Search here...";
+
+// Error
+"ErrorTitle" = "ERROR";
+"ErrorGetItem" = "Error when get item";
+"ErrorParseElement" = "Unkown parse element";
+"ErrorJSON" = "JSON Malformed";

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wzN-Kd-bzZ" customClass="LoadingCollectionViewCell" customModule="tmdb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aIu-ce-J5c">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="sGe-f3-jdz">
+                        <rect key="frame" x="187.5" y="29" width="37" height="37"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sGe-f3-jdz" firstAttribute="centerX" secondItem="aIu-ce-J5c" secondAttribute="centerX" id="8Oa-eY-s3F"/>
+                    <constraint firstItem="sGe-f3-jdz" firstAttribute="centerY" secondItem="aIu-ce-J5c" secondAttribute="centerY" id="8rH-Hc-Olu"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="412" height="95"/>
+            <connections>
+                <outlet property="activityIndicator" destination="sGe-f3-jdz" id="6wZ-qj-fXe"/>
+            </connections>
+            <point key="canvasLocation" x="-102.89855072463769" y="122.87946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
