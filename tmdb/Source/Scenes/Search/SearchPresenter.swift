@@ -14,9 +14,9 @@ class SearchPresenter {
     let interactor: SearchInteractorProtocol?
     let wireframe: SearchWireframeProtocol?
     
-    private var searchs: [SearchItem] = []
-    private var shouldLoadingCell = false
-    private var lastSearchString: String = ""
+    var searchs: [SearchItem] = []
+    var shouldLoadingCell = false
+    var lastSearchString: String = ""
 
     // MARK: - Init
     init(view: SearchViewProtocol?,

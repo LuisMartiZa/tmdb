@@ -43,6 +43,16 @@
 		E1B7897727B82F5D00055B44 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897627B82F5D00055B44 /* Localized.swift */; };
 		E1B7897927B82FA100055B44 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897827B82FA100055B44 /* String+Localized.swift */; };
 		E1B7897B27B8332200055B44 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7897A27B8332200055B44 /* UIViewController+Utils.swift */; };
+		E1B7898A27B9628F00055B44 /* SearchWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7898927B9628F00055B44 /* SearchWireframeTests.swift */; };
+		E1B7898C27B962B100055B44 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7898B27B962B100055B44 /* SearchPresenterTests.swift */; };
+		E1B7898E27B962C400055B44 /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7898D27B962C400055B44 /* SearchInteractorTests.swift */; };
+		E1B7899227B9633400055B44 /* SearchRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899127B9633400055B44 /* SearchRepositoryMock.swift */; };
+		E1B7899627B9662700055B44 /* StringFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899527B9662700055B44 /* StringFactory.swift */; };
+		E1B7899827B967CB00055B44 /* SearchPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899727B967CB00055B44 /* SearchPageFactory.swift */; };
+		E1B7899A27B96D2E00055B44 /* SearchViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899927B96D2E00055B44 /* SearchViewMock.swift */; };
+		E1B7899C27B96D7A00055B44 /* SearchInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899B27B96D7A00055B44 /* SearchInteractorMock.swift */; };
+		E1B7899E27B96D8E00055B44 /* SearchWireframeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899D27B96D8E00055B44 /* SearchWireframeMock.swift */; };
+		E1B789A027B9766C00055B44 /* SearchItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7899F27B9766C00055B44 /* SearchItemFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +112,16 @@
 		E1B7897627B82F5D00055B44 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		E1B7897827B82FA100055B44 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		E1B7897A27B8332200055B44 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		E1B7898927B9628F00055B44 /* SearchWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireframeTests.swift; sourceTree = "<group>"; };
+		E1B7898B27B962B100055B44 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		E1B7898D27B962C400055B44 /* SearchInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorTests.swift; sourceTree = "<group>"; };
+		E1B7899127B9633400055B44 /* SearchRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryMock.swift; sourceTree = "<group>"; };
+		E1B7899527B9662700055B44 /* StringFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFactory.swift; sourceTree = "<group>"; };
+		E1B7899727B967CB00055B44 /* SearchPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageFactory.swift; sourceTree = "<group>"; };
+		E1B7899927B96D2E00055B44 /* SearchViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewMock.swift; sourceTree = "<group>"; };
+		E1B7899B27B96D7A00055B44 /* SearchInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorMock.swift; sourceTree = "<group>"; };
+		E1B7899D27B96D8E00055B44 /* SearchWireframeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireframeMock.swift; sourceTree = "<group>"; };
+		E1B7899F27B9766C00055B44 /* SearchItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemFactory.swift; sourceTree = "<group>"; };
 		F81D3ED2BB16298D0592EEE4 /* Pods-tmdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb.release.xcconfig"; path = "Target Support Files/Pods-tmdb/Pods-tmdb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,6 +302,9 @@
 		E12FA32127B702FE006187C1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E1B7899327B9660E00055B44 /* Common */,
+				E1B7898627B9621700055B44 /* Scenes */,
+				E1B7898F27B962F000055B44 /* Networking */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -373,6 +396,69 @@
 			path = MovieDetail;
 			sourceTree = "<group>";
 		};
+		E1B7898627B9621700055B44 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7898727B9622000055B44 /* Search */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E1B7898727B9622000055B44 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7898827B9622800055B44 /* Mocks */,
+				E1B7898927B9628F00055B44 /* SearchWireframeTests.swift */,
+				E1B7898B27B962B100055B44 /* SearchPresenterTests.swift */,
+				E1B7898D27B962C400055B44 /* SearchInteractorTests.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E1B7898827B9622800055B44 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7899927B96D2E00055B44 /* SearchViewMock.swift */,
+				E1B7899B27B96D7A00055B44 /* SearchInteractorMock.swift */,
+				E1B7899D27B96D8E00055B44 /* SearchWireframeMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E1B7898F27B962F000055B44 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7899027B9630000055B44 /* Repositories */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E1B7899027B9630000055B44 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7899127B9633400055B44 /* SearchRepositoryMock.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1B7899327B9660E00055B44 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7899427B9661700055B44 /* Factories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E1B7899427B9661700055B44 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E1B7899527B9662700055B44 /* StringFactory.swift */,
+				E1B7899727B967CB00055B44 /* SearchPageFactory.swift */,
+				E1B7899F27B9766C00055B44 /* SearchItemFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		F161EC5D9F13553CAB614311 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +528,7 @@
 					};
 					E12FA2F327B6F3A0006187C1 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = E12FA2DD27B6F39F006187C1;
 					};
 				};
@@ -592,6 +679,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B7899C27B96D7A00055B44 /* SearchInteractorMock.swift in Sources */,
+				E1B7898C27B962B100055B44 /* SearchPresenterTests.swift in Sources */,
+				E1B7899227B9633400055B44 /* SearchRepositoryMock.swift in Sources */,
+				E1B7898A27B9628F00055B44 /* SearchWireframeTests.swift in Sources */,
+				E1B7899827B967CB00055B44 /* SearchPageFactory.swift in Sources */,
+				E1B7899A27B96D2E00055B44 /* SearchViewMock.swift in Sources */,
+				E1B7899E27B96D8E00055B44 /* SearchWireframeMock.swift in Sources */,
+				E1B789A027B9766C00055B44 /* SearchItemFactory.swift in Sources */,
+				E1B7898E27B962C400055B44 /* SearchInteractorTests.swift in Sources */,
+				E1B7899627B9662700055B44 /* StringFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,15 +894,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4G8ZN2NQU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdbTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tmdb.app/tmdb";
@@ -818,11 +922,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4G8ZN2NQU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.martiza.dev.tmdbTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

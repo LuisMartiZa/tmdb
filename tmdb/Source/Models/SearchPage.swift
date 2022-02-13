@@ -13,6 +13,8 @@ class SearchPage {
     var totalResults: Int = 0
     var totalPages: Int = 1
     
+    init() { }
+    
     init(json: [String: Any]) {
         if let page = json["page"] as? Int {
             self.page = page

@@ -14,7 +14,7 @@ enum SearchInteractorError: Error {
 
 class SearchInteractor {
     private let repository: SearchRepositoryProtocol!
-    private var lastPage: SearchPage?
+    var lastPage: SearchPage?
     
     init(_ repository: SearchRepositoryProtocol) {
         self.repository = repository

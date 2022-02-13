@@ -14,6 +14,8 @@ class SearchItem {
     var overview: String!
     var posterURL: String!
     
+    init() {}
+    
     init?(json: [String: Any]) {
         guard let id = json["id"] as? Int,
               let title = json["title"] as? String,
